@@ -6,12 +6,12 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-Console.Write("Введите строку: ");
-int pos1 = Convert.ToInt32(Console.ReadLine()) - 1;
-Console.Write("Введите столбец: ");
-int pos2 = Convert.ToInt32(Console.ReadLine()) - 1;
-int n = 5; 
-int m = 7; 
+Console.Write("Введите номер строки: ");
+int pos1 = int.Parse(Console.ReadLine()) - 1;
+Console.Write("Введите номер столбца: ");
+int pos2 = int.Parse(Console.ReadLine()) - 1;
+int n = 6; 
+int m = 9; 
 Random random = new Random();
 int[,] arr = new int[n, m];
 Console.WriteLine("Исходный массив: ");
@@ -30,7 +30,6 @@ Console.WriteLine("Элемент не существует  ");
 }
     else
 {
-    Console.WriteLine("Значение элемента массива = {0}", arr[pos1, pos2]);
+    Console.WriteLine("Значение элемента массива с заданными номерами столбца и строки равна {0}", arr[pos1, pos2]);
 }
-Console.ReadLine();
  
